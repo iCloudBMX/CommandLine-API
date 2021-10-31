@@ -12,11 +12,11 @@ namespace CommandLine.Profiles
     {
         public CommandsProfile()
         {
-            CreateMap<CommandCreatedDto, Command>();
+            CreateMap<CommandCreatedDto, Command>().ReverseMap();
 
-            CreateMap<Command, CommandReadDto>();
+            CreateMap<Command, CommandReadDto>().ReverseMap();
 
-            CreateMap<CommandUpdateDto, Command>();
+            CreateMap<CommandUpdateDto, Command>().ReverseMap();
         }
 
     }

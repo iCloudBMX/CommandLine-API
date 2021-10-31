@@ -14,8 +14,6 @@ namespace CommandLine.Data
 
         Task CreateCommand(Command command);
 
-        Task UpdateCommand(Command command);
-
         void DeleteCommand(Command command);
 
         public Task<bool> SaveChangesAsync();

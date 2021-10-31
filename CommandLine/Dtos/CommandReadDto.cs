@@ -5,13 +5,8 @@ using System.Threading.Tasks;
 
 namespace CommandLine.Dtos
 {
-    public class CommandReadDto
+    public class CommandReadDto : CommandCreatedDto
     {
         public int Id { get; set; }
-        public string HowTo { get; set; }
-
-        public string Platform { get; set; }
-
-        public string COmmandLine { get; set; }
     }
 }

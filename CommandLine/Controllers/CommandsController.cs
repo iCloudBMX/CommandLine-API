@@ -26,7 +26,6 @@ namespace CommandLine.Controllers
             _mapper = mapper;
         }
 
-
         [HttpPost]
         public async Task<IActionResult> CreateCommand(CommandCreatedDto commandCreatedDto)
         {
@@ -85,13 +84,9 @@ namespace CommandLine.Controllers
 
             _mapper.Map(updateDto, commandModelFromRepo);
 
-
-            await _repository.UpdateCommand(commandModelFromRepo);
-
             await _repository.SaveChangesAsync();
 
             return NoContent();
         }
-
     }
 }

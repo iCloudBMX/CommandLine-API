@@ -50,10 +50,5 @@ namespace CommandLine.Data
         {
             return await _context.SaveChangesAsync() >= 0;
         }
-
-        public async Task UpdateCommand(Command command)
-        {
-            ///
-        }
     }
 }

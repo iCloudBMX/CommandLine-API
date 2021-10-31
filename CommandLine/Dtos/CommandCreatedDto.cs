@@ -16,7 +16,7 @@ namespace CommandLine.Dtos
         public string Platform { get; set; }
 
         [Required]
-        public string COmmandLine { get; set; }
+        public string CommandLine { get; set; }
 
     }
 }
